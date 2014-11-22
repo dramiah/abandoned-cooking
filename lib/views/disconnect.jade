@@ -1,0 +1,21 @@
+extend ./layout
+
+
+block content
+    .heading
+        h1 Abandon Cooking
+        p.quote cooking is like love.  it should be entered into with abandon or not at all.
+    div.center-page
+        form(action="/login", method="post")
+            label Username:
+            input(type="text", name="username", placeholder="username")
+            label Password:
+            input(type="password", name="password", placeholder="password")
+            input(type="submit", value="login")
+    ul
+        li: a(href="#") About
+        li: a(href="#") Contact
+        li: a(href="#") Join Us
+        li: a(href="#") Blog
+
+    
